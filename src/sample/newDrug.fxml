@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewDrugController">
+   <children>
+      <Button layoutY="64.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="194.0" text="صفحه ی اصلی" textFill="#1f10c9" />
+      <Label layoutX="492.0" layoutY="38.0" prefHeight="21.0" prefWidth="52.0" text="نام دارو" />
+      <Label layoutX="491.0" layoutY="94.0" text="دوز دارو" />
+      <Label layoutX="491.0" layoutY="147.0" text="تعداد دارو" />
+      <Label layoutX="490.0" layoutY="201.0" text="زمانبندی دارو" />
+      <Label layoutX="490.0" layoutY="255.0" text="توصیه پزشک" />
+      <Separator layoutX="188.0" layoutY="-3.0" orientation="VERTICAL" prefHeight="376.0" prefWidth="15.0" />
+      <TextField fx:id="nameTextField" layoutX="223.0" layoutY="33.0" />
+      <TextField fx:id="dozTextField" layoutX="223.0" layoutY="89.0" />
+      <TextField fx:id="numberTextField" layoutX="223.0" layoutY="142.0" />
+      <TextField fx:id="timeTextField" layoutX="223.0" layoutY="196.0" />
+      <TextField fx:id="adviseTextField" layoutX="223.0" layoutY="250.0" />
+      <Button mnemonicParsing="false" onMouseClicked="#save" prefHeight="37.0" prefWidth="194.0" text="ثبت" textFill="#19944e" />
+      <Button layoutY="33.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="31.0" prefWidth="194.0" text="صفحه ی قبل" textFill="#2a1ad7" />
+      <Label fx:id="fillLabel" layoutX="14.0" layoutY="147.0" text="لطفا همه ی موارد را وارد کنید" textFill="#c60f0f" visible="false" />
+      <Label fx:id="numericLabel" layoutX="13.0" layoutY="186.0" text="تعداد و دوز را به عدد وارد کنید" textFill="#d71313" visible="false" />
+   </children>
+</AnchorPane>

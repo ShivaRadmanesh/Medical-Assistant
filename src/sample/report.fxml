@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReportController">
+   <children>
+      <ImageView fx:id="reportImage" fitHeight="400.0" fitWidth="600.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="467.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#allPayment" prefHeight="31.0" prefWidth="119.0" text="همه ی هزینه ها" />
+      <Label fx:id="totalPaymentLabel" layoutX="360.0" layoutY="31.0" text="Label" textFill="#d11b1b" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="467.0" layoutY="70.0" mnemonicParsing="false" onMouseClicked="#personalPayment" prefHeight="31.0" prefWidth="119.0" text="هزینه ی بیمار" />
+      <TextField fx:id="personalPaymentTextField" layoutX="360.0" layoutY="70.0" prefHeight="31.0" prefWidth="99.0" />
+      <Label layoutX="317.0" layoutY="75.0" text="(کد ملی)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="personalPaymentLabel" layoutX="215.0" layoutY="75.0" text="Label" textFill="#d11b1b" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="warningLabel" layoutX="70.0" layoutY="69.0" text="کد ملی ثبت نشده" textFill="#f83105" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="360.0" layoutY="117.0" prefHeight="31.0" prefWidth="99.0" />
+      <Button layoutX="467.0" layoutY="117.0" mnemonicParsing="false" onMouseClicked="#patientNumber" prefHeight="31.0" prefWidth="119.0" text="تعداد بیماران" />
+      <Label fx:id="patientNumberLabel" layoutX="272.0" layoutY="122.0" text="Label" textFill="#d11b1b" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="467.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#searchByAge" prefHeight="31.0" prefWidth="119.0" text="جستجو ی سن" />
+      <TextField fx:id="ageTextField" layoutX="421.0" layoutY="162.0" prefHeight="31.0" prefWidth="38.0" />
+      <Label fx:id="numeric" layoutX="310.0" layoutY="170.0" text="سن را به عدد وارد کنید" textFill="#cd3a3a" visible="false">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="ids" layoutX="181.0" layoutY="163.0" prefHeight="21.0" prefWidth="119.0" visible="false" />
+      <Button fx:id="observeButton" layoutX="70.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#observe" text="مشاهده" visible="false" />
+      <Button layoutX="467.0" layoutY="212.0" mnemonicParsing="false" onMouseClicked="#insurance" prefHeight="31.0" prefWidth="119.0" text="هزینه ی بیمه" />
+      <TextField fx:id="insuranceTextField" layoutX="360.0" layoutY="212.0" prefHeight="31.0" prefWidth="99.0" />
+      <Label fx:id="insuranceLabel" layoutX="253.0" layoutY="217.0" text="Label" textFill="#d11b1b" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="467.0" layoutY="262.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="31.0" prefWidth="119.0" text="نام و تاریخ" />
+      <TextField fx:id="idTextField" layoutX="360.0" layoutY="262.0" prefHeight="31.0" prefWidth="99.0" />
+      <Label layoutX="317.0" layoutY="270.0" text="(کد ملی)">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="notFoundLabel" layoutX="70.0" layoutY="264.0" text="کد ملی ثبت نشده" textFill="#f83105" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="467.0" layoutY="332.0" text="Label" textFill="#bf1010" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="visitDayList" layoutX="197.0" layoutY="327.0" prefWidth="150.0" visible="false" />
+      <Button layoutX="-1.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="600.0" text="صفحه ی اصلی" textFill="#1d15b2" />
+   </children>
+</AnchorPane>

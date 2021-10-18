@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SavedController">
+   <children>
+      <Button fx:id="homeButton" layoutX="-1.0" layoutY="362.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="39.0" prefWidth="600.0" text="صفحه ی اصلی" textFill="#220eb9" />
+      <Label layoutX="231.0" layoutY="152.0" text="ثبت شد" textFill="#109e15">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EditVisitController">
+    <children>
+        <ComboBox fx:id="drugs" layoutX="180.0" layoutY="185.0" prefWidth="150.0" />
+        <Button layoutY="-2.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="31.0" prefWidth="175.0" text="ثبت" textFill="#17905a" />
+        <Label layoutX="492.0" layoutY="144.0" text="تاریخ ویزیت" />
+        <DatePicker fx:id="visitDay" layoutX="181.0" layoutY="139.0" prefHeight="31.0" prefWidth="159.0" />
+        <TextField fx:id="conditionTextField" layoutX="180.0" layoutY="13.0" prefHeight="31.0" prefWidth="286.0" />
+        <Label layoutX="478.0" layoutY="18.0" text="شرح حال بیمار" />
+        <Label layoutX="476.0" layoutY="66.0" text="تشخیص پزشک" />
+        <TextField fx:id="diagnosisTextField" layoutX="180.0" layoutY="61.0" prefHeight="31.0" prefWidth="286.0" />
+        <Label layoutX="491.0" layoutY="190.0" text="تجویز پزشک" />
+        <Label layoutX="517.0" layoutY="234.0" text="دوز دارو" />
+        <Label layoutX="511.0" layoutY="277.0" text="تعداد دارو" />
+        <Label layoutX="479.0" layoutY="318.0" text="زمانبندی مصرف" />
+        <Label layoutX="481.0" layoutY="353.0" text="توصیه ی پزشک" />
+        <TextField fx:id="dozTextField" layoutX="180.0" layoutY="229.0" prefHeight="31.0" prefWidth="286.0" />
+        <TextField fx:id="numberTextField" layoutX="180.0" layoutY="272.0" prefHeight="31.0" prefWidth="286.0" />
+        <TextField fx:id="timeTextField" layoutX="180.0" layoutY="313.0" prefHeight="31.0" prefWidth="286.0" />
+        <TextField fx:id="adviseTextField" layoutX="180.0" layoutY="348.0" prefHeight="31.0" prefWidth="286.0" />
+        <Separator layoutX="171.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="10.0" />
+        <Button layoutY="26.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="175.0" text="صفحه ی اصلی" textFill="#390dd7" />
+        <Button layoutX="-1.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="31.0" prefWidth="175.0" text="صفحه ی قبل" textFill="#2110da" />
+        <Label layoutX="475.0" layoutY="105.0" text="هزینه ی ویزیت" />
+        <TextField fx:id="paymentTextField" layoutX="181.0" layoutY="100.0" prefHeight="31.0" prefWidth="286.0" />
+        <Label layoutX="181.0" layoutY="378.0" text="در صورت وارد نکردن اطلاعات مربوط به داروی مورد نظر, مقادیر پیشنهادی ثبت میشود" textFill="#0f9033">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="fill" layoutY="265.0" text="همه ی موارد به جز اطلاعات دارو اجباری است" textFill="#c61b1b" visible="false">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+        <Label fx:id="numeric" layoutX="-1.0" layoutY="170.0" text="هزینه ی ویزیت را به صورت عدد وارد کنید" textFill="#e41313" visible="false">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label fx:id="numeric2" layoutX="7.0" layoutY="123.0" text="تعداد و دوز دارو را به صورت عدد وارد کنید" textFill="#e41515" visible="false">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+      <Label fx:id="visitDayLabel" layoutX="385.0" layoutY="144.0" text="Label" />
+    </children>
+
+</AnchorPane>

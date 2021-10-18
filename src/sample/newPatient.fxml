@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewPatientController">
+   <children>
+      <Label fx:id="saved" contentDisplay="TOP" ellipsisString="" layoutX="56.0" layoutY="297.0" prefHeight="42.0" prefWidth="139.0" text="بیمار ثبت شد." textAlignment="RIGHT" textFill="#258d54" textOverrun="CENTER_WORD_ELLIPSIS" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="51.0" text="نام و نام خانوادگی*" />
+      <Label layoutX="522.0" layoutY="97.0" prefHeight="21.0" prefWidth="59.0" text="نام پدر*" />
+      <Label layoutX="537.0" layoutY="139.0" text="سن*" />
+      <Label layoutX="491.0" layoutY="191.0" text="شماره ی ملی*" />
+      <Label layoutX="525.0" layoutY="241.0" text="جنسیت*" />
+      <Label layoutX="525.0" layoutY="282.0" text="نوع بیمه" />
+      <Label layoutX="481.0" layoutY="358.0" text="تاریخ انقضای بیمه" />
+      <Label layoutX="504.0" layoutY="318.0" text="شماره ی بیمه" />
+      <TextField fx:id="fatherNameTextField" layoutX="244.0" layoutY="92.0" />
+      <TextField fx:id="ageTextField" layoutX="244.0" layoutY="134.0" />
+      <TextField fx:id="nameTextField" layoutX="244.0" layoutY="46.0" />
+      <TextField fx:id="idTextField" layoutX="244.0" layoutY="186.0" />
+      <TextField fx:id="insuranceTextField" layoutX="244.0" layoutY="277.0" />
+      <TextField fx:id="insuranceIdTextField" layoutX="244.0" layoutY="313.0" />
+      <DatePicker fx:id="expDate" layoutX="243.0" layoutY="353.0" prefHeight="31.0" prefWidth="170.0" />
+      <Label layoutX="273.0" layoutY="4.0" text="توجه: مواردی که با * مشخص شده اند اجباری هستند" textFill="#da1212" />
+      <Button fx:id="saveButton" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="31.0" prefWidth="229.0" text="ثبت" textFill="#0b9426" />
+      <Separator layoutX="222.0" layoutY="1.0" orientation="VERTICAL" prefHeight="402.0" prefWidth="14.0" />
+      <Button fx:id="homeButton" layoutX="-1.0" layoutY="31.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="229.0" text="صفحه ی اصلی" textFill="#3004bf" />
+      <RadioButton fx:id="male" layoutX="305.0" layoutY="231.0" mnemonicParsing="false" text="مرد" />
+      <RadioButton fx:id="female" layoutX="354.0" layoutY="231.0" mnemonicParsing="false" text="زن" />
+      <Button fx:id="visitButton" layoutX="56.0" layoutY="343.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="98.0" text="ویزیت" visible="false" />
+      <Label fx:id="numeric" layoutX="14.0" layoutY="139.0" text=" سن را به عدد (انگلیسی) وارد کنید" textFill="#e11d1d" visible="false" />
+      <Label fx:id="fill" layoutX="23.0" layoutY="181.0" text="همه ی موارد * دار را وارد کنید" textFill="#d01c1c" visible="false" />
+      <Button fx:id="backButton" layoutX="-1.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="31.0" prefWidth="229.0" text="صفحه ی قبل" textFill="#4e12c6" />
+   </children>
+</AnchorPane>

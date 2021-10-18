@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GetPatientIdController">
+   <children>
+      <Button fx:id="searchButton" layoutX="266.0" layoutY="196.0" mnemonicParsing="false" onMouseClicked="#search" text="جستجو" />
+      <Label layoutX="208.0" layoutY="111.0" prefHeight="21.0" prefWidth="187.0" text="شماره ملی بیمار را وارد کنید" />
+      <Label fx:id="notFoundLabel" layoutX="179.0" layoutY="256.0" text="بیماری با این شماره ملی ثبت نشده" textFill="#bf3111" visible="false" />
+      <TextField fx:id="idTextField" layoutX="204.0" layoutY="145.0" />
+      <Button fx:id="homeButton" layoutX="-3.0" layoutY="371.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="600.0" text="صفحه ی اصلی" textFill="#1d27e8" />
+      <Button fx:id="backButton" layoutX="4.0" layoutY="340.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="594.0" text="صفحه ی قبل" textFill="#3019e3" />
+      <Label fx:id="label" layoutX="69.0" layoutY="190.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>

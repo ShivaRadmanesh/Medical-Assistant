@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <Button fx:id="enterButton" layoutX="233.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#enter" text="ورود" />
+      <TextField fx:id="userTextField" layoutX="215.0" layoutY="93.0" promptText="نام کاربری" />
+      <TextField fx:id="passTextField" layoutX="215.0" layoutY="131.0" promptText="رمز عبور" />
+      <Button fx:id="registerButton" layoutX="290.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#register" text="ثبت نام" />
+      <Label fx:id="label" layoutX="205.0" layoutY="179.0" text="نام کاربری یا رمز عبور اشتباه است" textFill="#da1111" visible="false" />
+   </children>
+</Pane>

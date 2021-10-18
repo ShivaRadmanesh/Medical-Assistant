@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <Button fx:id="registerButton" layoutX="331.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#register" text="ثبت نام" />
+      <TextField fx:id="userTextField" layoutX="224.0" layoutY="100.0" promptText="نام کاربری" />
+      <TextField fx:id="passTextField" layoutX="224.0" layoutY="139.0" promptText="رمز عبور" />
+      <CheckBox fx:id="type" layoutX="224.0" layoutY="200.0" mnemonicParsing="false" text="پزشک" />
+      <Label fx:id="label" layoutX="235.0" layoutY="274.0" text="کاربر با موفقیت ثبت شد" textFill="#378609" visible="false" />
+      <Button fx:id="enterButton" layoutX="256.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#enter" text="صفحه ی ورود" />
+   </children>
+</Pane>

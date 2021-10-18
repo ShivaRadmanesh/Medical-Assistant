@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ObservePatientController">
+   <children>
+      <Button layoutY="371.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="31.0" prefWidth="676.0" text="صفحه ی اصلی" textFill="#290db9" />
+      <Separator layoutX="505.0" orientation="VERTICAL" prefHeight="374.0" prefWidth="16.0" />
+      <Label layoutX="546.0" layoutY="11.0" text="نام و نام خانوادگی" textFill="#0f9741" />
+      <Label fx:id="nameLabel" layoutX="58.0" layoutY="11.0" text="Label" />
+      <Label layoutX="546.0" layoutY="53.0" text="نام پدر" textFill="#118a35" />
+      <Label fx:id="fatherNameLabel" layoutX="58.0" layoutY="53.0" text="Label" />
+      <Label layoutX="546.0" layoutY="89.0" text="سن" textFill="#118a35" />
+      <Label fx:id="ageLabel" layoutX="58.0" layoutY="100.0" text="Label" />
+      <Label layoutX="546.0" layoutY="142.0" text="شماره ملی" textFill="#118a35" />
+      <Label fx:id="idLabel" layoutX="58.0" layoutY="142.0" text="Label" />
+      <Label layoutX="544.0" layoutY="180.0" text="جنسیت" textFill="#118a35" />
+      <Label fx:id="genderLabel" layoutX="58.0" layoutY="180.0" text="Label" />
+      <Label layoutX="543.0" layoutY="224.0" text="نوع بیمه" textFill="#118a35" />
+      <Label fx:id="insuranceLabel" layoutX="58.0" layoutY="224.0" text="Label" />
+      <Label layoutX="538.0" layoutY="271.0" text="شماره ی بیمه" textFill="#118a35" />
+      <Label fx:id="insuranceIdLabel" layoutX="58.0" layoutY="271.0" text="Label" />
+      <Label layoutX="540.0" layoutY="309.0" text="تاریخ انقضای بیمه" textFill="#118a35" />
+      <Label fx:id="expLabel" layoutX="58.0" layoutY="309.0" text="Label" />
+      <Separator layoutY="32.0" prefHeight="21.0" prefWidth="676.0" />
+      <Separator layoutY="127.0" prefHeight="6.0" prefWidth="676.0" />
+      <Separator layoutY="81.0" prefHeight="6.0" prefWidth="676.0" />
+      <Separator layoutX="-4.0" layoutY="170.0" prefHeight="6.0" prefWidth="676.0" />
+      <Separator layoutX="-4.0" layoutY="215.0" prefHeight="6.0" prefWidth="676.0" />
+      <Separator layoutY="252.0" prefHeight="6.0" prefWidth="676.0" />
+      <Separator layoutY="298.0" prefHeight="6.0" prefWidth="676.0" />
+   </children>
+</AnchorPane>
